@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,mathtools}
+\usepackage{hyperref,fancyvrb}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\input{../unicodedecl.tex}
+
+\begin{document}
+
+\section{Custom Latex Keyboard}
+
+Fourier without custom keyboard:
+
+    $$ f(x)=\sum_{n=-\infty}^\infty c_n\ e^{2\pi i(n/T) x} =\sum_{n=-\infty}^\infty \hat{f}(\xi_n)\ e^{2\pi i\xi_n x}\Delta\xi, $$
+    
+    $$ c_n = \frac{1}{T} \int_{-T/2}^{T/2} f(x)\ e^{-2\pi i(n/T) x} \, dx. $$
+   
+Fourier with \href{https://github.com/con-f-use/Latex-Keyboard}{custom keyboard}:
+
+    $$ f(x)= Σ_{n=-∞}^∞ c_n\ e^{2πi(n/T) x} =Σ_{n=-∞}^∞ \hat{f}(ξ_n)\ e^{2\pi iξ_n x}Δξ, $$
+    
+    $$ c_n = \frac{1}{T} ∫_{-T/2}^{T/2} f(x)\ e^{-2π i(n/T) x} \, dx. $$
+    
+Also nice for simple super and subscripts: 
+
+    $$x₁ = h² + x³ - x₀$$
+    
+or partials: 
+
+    $$ μ⁰·∂₀ f(x₁,x₂,x₃) + μ¹·∂₁ f(x₁,x₂,x₃) + … = 0 $$
+    
+\section{Source code}
+
+\begin{Verbatim}[fontsize=\small, frame=single]
+Fourier without custom keyboard:
+
+    $$ f(x) = \sum_{n=-\infty}^\infty c_n\ e^{2\pi i(n/T) x} 
+            = \sum_{n=-\infty}^\infty \hat{f}(\xi_n)\ e^{2\pi i\xi_n x}\Delta\xi, $$
+    
+    $$ c_n = \frac{1}{T} \int_{-T/2}^{T/2} f(x)\ e^{-2\pi i(n/T) x} \, dx. $$
+   
+Fourier with \href{https://github.com/con-f-use/Latex-Keyboard}{custom keyboard}:
+
+    $$ f(x) = Σ_{n=-∞}^∞ c_n\ e^{2πi(n/T) x} 
+            = Σ_{n=-∞}^∞ \hat{f}(ξ_n)\ e^{2\pi iξ_n x}Δξ, $$
+    
+    $$ c_n = \frac{1}{T} ∫_{-T/2}^{T/2} f(x)\ e^{-2π i(n/T) x} \, dx. $$
+    
+Also nice for simple super and subscripts: 
+
+    $$x₁ = h² + x³ - x₀$$
+    
+or partials: 
+
+    $$ μ⁰·∂₀ f(x₁,x₂,x₃) + μ¹·∂₁ f(x₁,x₂,x₃) + … = 0 $$
+\end{Verbatim}
+ 
+\end{document}
