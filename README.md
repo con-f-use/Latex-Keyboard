@@ -20,7 +20,7 @@ And here the same source after:
 Not only is the second code more readable, but it is faster and easier to type,
 if your keyboard layout looks like this:
 
-![Custom keyboard layout for use with latex](layput.png)
+![Custom keyboard layout for use with latex](./layout.png)
 
 For people that type a lot in LaTeX or have special Symbols of other languages
 that they use allot, this might be nice.
